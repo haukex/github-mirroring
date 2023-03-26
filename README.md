@@ -7,10 +7,11 @@ repository to another remote repository.
 1. In the remote repository, configure an access token that has the appropriate
    rights to push to the repository. (For example, on GitLab, the default
    configuration may be that only Maintainers are allowed to push to Protected
-   branches.)
+   branches, so you may need to change that.)
 
 2. In your GitHub repository, go to the repository settings and create a new
-   secret in "Actions secrets and variables" which holds the token.
+   secret in "Actions secrets and variables" which holds the token for the
+   remote repository.
 
 3. Take the file `.github/workflows/github-mirror.yml` from this repository and
    adjust the URL so it points at the remote repository and includes the
